@@ -68,5 +68,5 @@ with open(filepath) as f:
             anagramMap[primeKey].append(line.strip())
 
     for primeKey in sorted(anagramMap):
-        if len(anagramMap[primeKey]) > 1:
+        if len(anagramMap[primeKey]) > len(anagramMap[primeKey][0]):
             print ', '.join(sorted(anagramMap[primeKey]))
